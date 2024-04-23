@@ -51,7 +51,7 @@ jobs:
           name: "install nuclei-cli"
           command: go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
       - run:
-          name: "Nuclei scan on QA"
+          name: "Nuclei QA"
           command: nuclei -u https://flippedcoding.com
 
 workflows:

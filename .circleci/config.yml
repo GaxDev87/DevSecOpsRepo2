@@ -11,3 +11,9 @@ jobs:
       - run:
           name: "run project unit tests"
           command: yarn redwood test
+
+workflows: 
+  deploy-to-qa: 
+    jobs: 
+      - unit-tests
+     

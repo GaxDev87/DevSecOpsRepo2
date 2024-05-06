@@ -1,5 +1,5 @@
 import { render } from '@redwoodjs/testing/web'
-
+import 'text-encoding-utf-8';
 import HomePage from './HomePage'
 
 describe('HomePage', () => {

@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: "install dependencies"
-          command: yarn
+          command: yarn install
       - run:
           name: "run project unit tests"
           command: yarn rw test

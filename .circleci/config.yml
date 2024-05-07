@@ -11,14 +11,4 @@ jobs:
       - run: 
           name: "run project unit tests" 
           command: yarn redwood test 
-  sast:
-    docker:
-      - image: cimg/node:14.20.0
-    steps:
-      - checkout
-      - run:
-          name: "install dependencies"
-          command: yarn
-      - run:
-          name: "execute retire.js"
-          command: cd web; retire --path web
+

@@ -13,6 +13,6 @@ jobs:
           command: yarn redwood test 
  
 workflows: 
-  deploy-to-qa: 
+  Testing...: 
     jobs: 
       - unit-tests

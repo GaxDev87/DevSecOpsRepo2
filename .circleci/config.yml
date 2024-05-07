@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: "install dependencies"
-          command: caniuse-lite && yarn install
+          command: caniuse-lite
 
       -run:
           name: "run project unit tests"

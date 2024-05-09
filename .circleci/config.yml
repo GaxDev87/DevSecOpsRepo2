@@ -11,8 +11,22 @@ jobs:
       - run: 
           name: "run project unit tests" 
           command: yarn redwood test 
+
+  build-app: 
+    docker: 
+      - image: cimg/node:14.20.0
+    steps:
+      - checkout 
+      - run: 
+          name: "install dependencies"
+          command: yarn 
+      - run: 
+          name: "build deploy artifact"
+          command: yarn redwood build 
+                   
  
 workflows: 
   Testing...: 
     jobs: 
       - unit-tests
+      - build-app
